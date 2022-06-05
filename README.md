@@ -22,7 +22,7 @@ Open up Terminal.app and run the following command:
 ```sh
 mkdir -p ~/workspace &&
   cd ~/workspace &&
-  git clone https://github.com/rxrevu/workstation-setup.git &&
+  git clone https://github.com/kimdhendrick/workstation-setup.git &&
   cd workstation-setup
 ```
 
@@ -30,23 +30,8 @@ mkdir -p ~/workspace &&
 
 If you're setting up a development machine choose which languages and tools to install:
 
-#### For Direct developers (remove unnecessary languages when running command)
-`./setup.sh aws ruby python java java-tools docker snowflake terraform intellij`
-
-Optional but recommended:
- - `fzf`
- - `lefthook`
- - `rectangle`
- - `rxrevu_web_app_yml_symlink`
-
-#### For Insights developers
-`./setup.sh aws python docker snowflake intellij`
-
-#### For Solutions Architects/Platform Engineers
-`./setup.sh aws docker snowflake terraform lefthook`
-
-#### For Scout developers
-`./setup.sh aws java16 docker flycut rectangle yarn node16`
+#### Examples
+`./setup.sh ruby java java-tools docker intellij rectangle yarn node16`
 
 Additional options can be installed later by running:
 
