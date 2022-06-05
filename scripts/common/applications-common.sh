@@ -12,6 +12,7 @@ brew install --cask 1password
 brew install --cask slack
 brew install --cask notion
 brew install --cask remarkable
+brew install --cask dropbox
 
 # Terminals
 
