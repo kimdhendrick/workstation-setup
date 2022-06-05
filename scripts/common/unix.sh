@@ -17,7 +17,7 @@ brew install tealdeer
 # GNU's version of sed
 brew install gnu-sed
 # CLI for postman
-brew install newman
+#brew install newman
 # JSON query utility. https://stedolan.github.io/jq/
 brew install jq
 # JSON diff https://github.com/josephburnett/jd

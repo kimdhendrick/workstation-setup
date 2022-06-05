@@ -12,7 +12,7 @@ brew install gh
 set +e
 
 brew install --cask rowanj-gitx
-brew install --cask sourcetree
+#brew install --cask sourcetree
 brew install --cask gitup
 
 set -e

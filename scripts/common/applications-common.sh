@@ -8,7 +8,6 @@ echo "Installing applications"
 # Utilities
 
 brew install --cask alfred
-brew install --cask postman
 brew install --cask 1password
 brew install --cask slack
 brew install --cask notion
@@ -21,7 +20,7 @@ brew install --cask iterm2
 # Browsers
 
 brew install --cask firefox
-brew install --cask chrome
+brew install --cask google-chrome
 
 # Text Editors
 

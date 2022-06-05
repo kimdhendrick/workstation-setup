@@ -9,7 +9,6 @@ alias gc='git commit'
 alias gd='git diff'
 alias gco='git checkout $@'
 alias gcm='git commit -m $@'
-alias ll='ls -l'
 alias gl='git lg'
 alias gri='git rebase -i'
 alias grc='git rebase --continue'
@@ -23,12 +22,17 @@ alias unwip='git reset HEAD~'
 alias main='git checkout main'
 alias current_branch="git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'"
 alias gpsup='git push --set-upstream origin $(current_branch)'
+alias ll='ls -l'
 alias be='bundle exec'
-alias current='cd ${RX_REVU_HOME}'
 alias delete_branch='cb=$(current_branch) && gco master && git branch -D ${cb}'
-alias mfa="${WORKSTATION_SETUP_HOME}/bin/mfa"
-alias awsume=". awsume"
-
 
 # Git aliases
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+
+alias pair='git pair kh '
+alias go=gco
+alias gpsupf="git push --force-with-lease"
+alias gpullf="go main && git fetch && go - && git reset origin/`git symbolic-ref -q --short HEAD` --hard"
+alias fixupall="git rebase -i $(git merge-base HEAD main)"
+
+EDITOR=vi
