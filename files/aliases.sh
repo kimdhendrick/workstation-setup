@@ -32,7 +32,6 @@ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(ye
 alias pair='git pair kh '
 alias go=gco
 alias gpsupf="git push --force-with-lease"
-alias gpullf="go main && git fetch && go - && git reset origin/`git symbolic-ref -q --short HEAD` --hard"
-alias fixupall="git rebase -i $(git merge-base HEAD main)"
+#alias gpullf="go main && git fetch && go - && git reset origin/`git symbolic-ref -q --short HEAD` --hard"
 
 EDITOR=vi
