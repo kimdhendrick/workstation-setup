@@ -25,6 +25,7 @@ alias gpsup='git push --set-upstream origin $(current_branch)'
 alias ll='ls -l'
 alias be='bundle exec'
 alias delete_branch='cb=$(current_branch) && gco master && git branch -D ${cb}'
+alias prmerge='gh pr merge -r'
 
 # Git aliases
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
